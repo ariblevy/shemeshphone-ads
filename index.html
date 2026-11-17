@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ShemeshPhone 2025 – The Ads</title>
+<meta name="description" content="Flip through the ads in the 2025 ShemeshPhone, the Beit Shemesh telephone directory. Full-page ads, real businesses, a beautiful book.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ShemeshPhone 2025 – See the ads">
+<meta property="og:description" content="Full-page ads from this year's Beit Shemesh directory. Tap to flip through the book.">
+<meta property="og:image" content="https://ariblevy.github.io/shemeshphone-ads/og.jpg">
+<meta property="og:image:secure_url" content="https://ariblevy.github.io/shemeshphone-ads/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://ariblevy.github.io/shemeshphone-ads/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ariblevy.github.io/shemeshphone-ads/og.jpg">
+<meta name="theme-color" content="#14161e">
+<link rel="icon" href="img/eng/1s.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#14161e;--bg2:#1c1f2a;--ink:#f4f1e8;--mute:#a9adbb;--gold:#ffc837;--line:#2b2f3d}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:Heebo,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+body{overflow-x:hidden}
+a{color:inherit}
+img{display:block}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+/* top bar */
+.top{position:sticky;top:0;z-index:20;background:rgba(20,22,30,.86);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:12px;height:56px}
+.brand{font-weight:900;letter-spacing:-.01em;font-size:18px}
+.brand b{color:var(--gold)}
+.top nav{margin-left:auto;display:flex;gap:6px}
+.chip{border:1px solid var(--line);background:var(--bg2);color:var(--ink);border-radius:999px;padding:7px 13px;font:600 13px Heebo,sans-serif;text-decoration:none;cursor:pointer;white-space:nowrap}
+.chip.gold{background:var(--gold);color:#1a1a1a;border-color:var(--gold)}
+/* hero */
+.hero{padding-top:26px;padding-bottom:8px}
+@media (max-width:640px){.brand small{display:none}}
+.hero h1{font-size:clamp(30px,6vw,58px);line-height:1.02;margin:0 0 8px;font-weight:900;letter-spacing:-.025em}
+.hero h1 span{color:var(--gold)}
+.hero p{margin:0;color:var(--mute);font-size:clamp(15px,2.2vw,18px);max-width:640px}
+.he{direction:rtl;font-weight:600;color:var(--ink);opacity:.85;margin-top:4px!important}
+/* featured strip */
+.strip{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:22px 16px 26px;margin:0 auto;max-width:1180px;scrollbar-width:none}
+.strip::-webkit-scrollbar{display:none}
+.feat{flex:0 0 auto;width:min(68vw,300px);scroll-snap-align:center;border-radius:10px;overflow:hidden;background:#fff;box-shadow:0 18px 40px rgba(0,0,0,.45);cursor:zoom-in;transition:transform .25s}
+.feat:hover{transform:translateY(-4px)}
+.feat img{width:100%;height:auto;aspect-ratio:1962/2650;object-fit:cover}
+.hint{color:var(--mute);font-size:13px;text-align:center;margin:-12px 0 0}
+section{padding:46px 0}
+h2{font-size:clamp(24px,4vw,36px);margin:0 0 6px;font-weight:900;letter-spacing:-.02em}
+.sub{color:var(--mute);margin:0 0 22px}
+/* book */
+.bookstage{perspective:2200px;display:flex;justify-content:center;padding:10px 0 4px}
+.book{position:relative;width:min(92vw,880px);aspect-ratio:3924/2650;transition:transform .7s cubic-bezier(.3,.7,.2,1)}
+.book.closed{transform:translateX(-25%)}
+.leaf{position:absolute;top:0;left:50%;width:50%;height:100%;transform-origin:left center;transform-style:preserve-3d;transition:transform .9s cubic-bezier(.45,.05,.2,1);cursor:pointer}
+.leaf.flipped{transform:rotateY(-180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:hidden;background:#fbf6e8}
+.face img{width:100%;height:100%;object-fit:cover}
+.face.back{transform:rotateY(180deg)}
+.face.front{border-radius:0 6px 6px 0;box-shadow:inset 18px 0 22px -14px rgba(0,0,0,.35)}
+.face.back{border-radius:6px 0 0 6px;box-shadow:inset -18px 0 22px -14px rgba(0,0,0,.35)}
+.book::after{content:"";position:absolute;inset:3% 0 -6% 0;z-index:-1;background:radial-gradient(ellipse at center,rgba(0,0,0,.6),transparent 65%);filter:blur(10px)}
+.bookctl{display:flex;justify-content:center;align-items:center;gap:12px;margin-top:18px}
+.bookctl button{width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:var(--bg2);color:var(--ink);font-size:20px;cursor:pointer}
+.bookctl span{color:var(--mute);font-size:14px;min-width:90px;text-align:center}
+/* wall */
+.wall{columns:4 220px;column-gap:14px}
+.wall figure{margin:0 0 14px;break-inside:avoid;border-radius:8px;overflow:hidden;background:#fff;cursor:zoom-in;box-shadow:0 8px 22px rgba(0,0,0,.35);transition:transform .2s}
+.wall figure:hover{transform:scale(1.02)}
+.wall img{width:100%;height:auto;aspect-ratio:1962/2650}
+/* share */
+.share{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.card{background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:10px}
+.card h3{margin:0;font-size:19px}
+.card p{margin:0;color:var(--mute);font-size:14px;flex:1}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 16px;border-radius:10px;background:var(--gold);color:#1a1a1a;font-weight:800;text-decoration:none;border:0;cursor:pointer;font:800 15px Heebo,sans-serif}
+.btn.wa{background:#25d366;color:#08311a}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.row{display:flex;gap:8px;flex-wrap:wrap}
+footer{color:var(--mute);font-size:13px;padding:30px 0 50px;text-align:center}
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:50;background:rgba(8,9,12,.96);display:none;align-items:center;justify-content:center;touch-action:pan-y}
+.lb.on{display:flex}
+.lb img{max-width:96vw;max-height:88vh;width:auto;height:auto;border-radius:6px;box-shadow:0 20px 60px rgba(0,0,0,.6)}
+.lb .x,.lb .nv{position:absolute;background:rgba(255,255,255,.1);border:0;color:#fff;border-radius:50%;width:48px;height:48px;font-size:22px;cursor:pointer}
+.lb .x{top:14px;right:14px}
+.lb .pv{left:12px;top:50%;transform:translateY(-50%)}
+.lb .nx{right:12px;top:50%;transform:translateY(-50%)}
+.lb .ct{position:absolute;bottom:14px;left:0;right:0;text-align:center;color:var(--mute);font-size:13px}
+@media (max-width:640px){.lb .nv{display:none}.top nav .chip:not(.gold){display:none}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <div class="brand"><b>שמשפון</b> ShemeshPhone<small> 2025</small></div>
+  <nav><a class="chip" href="#book">The book</a><a class="chip" href="#all">All ads</a><a class="chip gold" href="#share">Share / PDF</a></nav>
+</div></header>
+
+<div class="wrap hero">
+  <h1>The ads in <span>ShemeshPhone&nbsp;2025</span></h1>
+  <p>Real businesses, full-color pages, in the directory Beit Shemesh keeps by the phone. Tap any ad to see it full size.</p>
+  <p class="he">המודעות של שמשפון תשפ״ו – לחצו על מודעה כדי לראות אותה בגדול</p>
+</div>
+<div class="strip" id="strip"></div>
+<p class="hint">← swipe for more →</p>
+
+<section id="book"><div class="wrap">
+  <h2>Flip through the book</h2>
+  <p class="sub">Tap the page or the arrows to turn. This is how your ad sits in print.</p>
+  <div class="bookstage"><div class="book closed" id="bk"></div></div>
+  <div class="bookctl"><button id="bp" aria-label="Previous page">‹</button><span id="bn"></span><button id="bf" aria-label="Next page">›</button></div>
+</div></section>
+
+<section id="all"><div class="wrap">
+  <h2>Every ad page</h2>
+  <p class="sub" id="cnt"></p>
+  <div class="wall" id="wall"></div>
+</div></section>
+
+<section id="share"><div class="wrap">
+  <h2>Take it with you</h2>
+  <p class="sub">Send these to a client in WhatsApp in one tap.</p>
+  <div class="share">
+    <div class="card"><h3>The whole book – PDF</h3><p>All 156 pages, English and Hebrew sides (about 28&nbsp;MB).</p><div class="row"><a class="btn" href="Shemeshphone-2025-full-English.pdf" download>From English cover</a><a class="btn" href="Shemeshphone-2025-full-Hebrew.pdf" download>מהכריכה העברית</a></div></div>
+    <div class="card"><h3>Ads PDF</h3><p>24 of the best ad pages in one light PDF (about 5&nbsp;MB).</p><div class="row"><a class="btn" href="ShemeshPhone-2025-Ads.pdf" download>Download PDF</a></div></div>
+    <div class="card"><h3>One-picture summary</h3><p>A single image with 12 ads, made to send in a chat.</p><div class="row"><a class="btn" href="ShemeshPhone-2025-Ads.jpg" download>Download image</a></div></div>
+    <div class="card"><h3>Send this page</h3><p>Opens WhatsApp with this page's link; the preview shows the ads.</p><div class="row"><a class="btn wa" id="wa" href="#">Share on WhatsApp</a></div></div>
+    <div class="card"><h3>The full flipbook</h3><p>The complete 2025 directory, every page, online.</p><div class="row"><a class="btn ghost" href="https://7ab80759.flowpaper.com/EngFlipbook2025Abridged/" target="_blank" rel="noopener">English</a><a class="btn ghost" href="https://7ab80759.flowpaper.com/HebFlipbook2025Abridged/" target="_blank" rel="noopener">עברית</a></div></div>
+  </div>
+</div></section>
+
+<footer>ShemeshPhone 2025 · Beit Shemesh Telephone Directory</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true">
+  <img id="lbi" alt="">
+  <button class="x" id="lbx" aria-label="Close">✕</button>
+  <button class="nv pv" id="lbp" aria-label="Previous">‹</button>
+  <button class="nv nx" id="lbn" aria-label="Next">›</button>
+  <div class="ct" id="lbc"></div>
+</div>
+
+<script>
+const WALL=[1,2,3,4,36,37,38,39,41,42,43,44,45,46,47,48,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,69,70,71,72,75,77,78,80,81,82,83,84,86,88,89,91,92,93,95,97,98,99,100,101,103,104,105,106,151,152,154,155,156];
+const FEAT=[67,88,83,103,86,100,101,64,57,70,69,78,72,71,4,48,105,44];
+const BOOK=[1,2,3,4,36,37,38,39,44,45,48,57,64,67,70,72,83,86,88,99,100,101,103,105,155,156];
+const S=p=>`img/eng/${p}s.jpg`, L=p=>`img/eng/${p}l.jpg`;
+const $=id=>document.getElementById(id);
+
+// featured strip + wall
+$('strip').innerHTML=FEAT.map((p,i)=>`<div class="feat" data-p="${p}"><img src="${S(p)}" alt="Ad page ${p}" ${i>3?'loading="lazy"':''}></div>`).join('');
+$('wall').innerHTML=WALL.map(p=>`<figure data-p="${p}"><img src="${S(p)}" alt="Ad page ${p}" loading="lazy"></figure>`).join('');
+$('cnt').textContent=`${WALL.length} pages of ads from the 2025 edition. Tap to enlarge.`;
+
+// lightbox
+let list=WALL,idx=0;
+function show(){ $('lbi').src=L(list[idx]); $('lbc').textContent=`${idx+1} / ${list.length}`; [1,-1].forEach(d=>{const n=list[(idx+d+list.length)%list.length];new Image().src=L(n)}) }
+function open(arr,p){list=arr;idx=arr.indexOf(p);show();$('lb').classList.add('on');document.body.style.overflow='hidden'}
+function close(){ $('lb').classList.remove('on');document.body.style.overflow='' }
+function step(d){idx=(idx+d+list.length)%list.length;show()}
+document.addEventListener('click',e=>{const t=e.target.closest('[data-p]');if(!t)return;open(t.closest('#strip')?FEAT:WALL,+t.dataset.p)});
+$('lbx').onclick=close; $('lbp').onclick=e=>{e.stopPropagation();step(-1)}; $('lbn').onclick=e=>{e.stopPropagation();step(1)};
+$('lb').addEventListener('click',e=>{if(e.target.id==='lb')close()});
+document.addEventListener('keydown',e=>{if(!$('lb').classList.contains('on'))return;if(e.key==='Escape')close();if(e.key==='ArrowRight')step(1);if(e.key==='ArrowLeft')step(-1)});
+let sx=null;$('lb').addEventListener('touchstart',e=>{sx=e.touches[0].clientX},{passive:true});
+$('lb').addEventListener('touchend',e=>{if(sx===null)return;const dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>45)step(dx<0?1:-1);sx=null});
+
+// flip book: leaf i has front=BOOK[2i], back=BOOK[2i+1]
+const bk=$('bk'), leaves=[];
+for(let i=0;i<BOOK.length;i+=2){
+  const l=document.createElement('div');l.className='leaf';
+  l.innerHTML=`<div class="face front"><img src="${S(BOOK[i])}" alt=""></div><div class="face back">${BOOK[i+1]?`<img src="${S(BOOK[i+1])}" alt="">`:''}</div>`;
+  bk.appendChild(l);leaves.push(l);
+}
+let turned=0;
+function layout(){
+  leaves.forEach((l,i)=>{l.classList.toggle('flipped',i<turned);l.style.zIndex=i<turned?i+1:leaves.length-i});
+  bk.classList.toggle('closed',turned===0);
+  bk.style.transform=turned===leaves.length?'translateX(25%)':'';
+  $('bn').textContent=turned===0?'Cover':turned===leaves.length?'Back cover':`Spread ${turned} of ${leaves.length-1}`;
+}
+function turn(d){const n=Math.max(0,Math.min(leaves.length,turned+d));if(n===turned)return;
+  const l=leaves[d>0?turned:turned-1];l.style.zIndex=leaves.length+5;turned=n;setTimeout(layout,450);l.classList.toggle('flipped',d>0);bk.classList.toggle('closed',turned===0);
+  bk.style.transform=turned===leaves.length?'translateX(25%)':'';
+  $('bn').textContent=turned===0?'Cover':turned===leaves.length?'Back cover':`Spread ${turned} of ${leaves.length-1}`;}
+leaves.forEach((l,i)=>l.addEventListener('click',()=>turn(i<turned?-1:1)));
+$('bf').onclick=()=>turn(1);$('bp').onclick=()=>turn(-1);
+let bx=null;bk.addEventListener('touchstart',e=>{bx=e.touches[0].clientX},{passive:true});
+bk.addEventListener('touchend',e=>{if(bx===null)return;const dx=e.changedTouches[0].clientX-bx;if(Math.abs(dx)>40){e.preventDefault();turn(dx<0?1:-1)}bx=null});
+layout();
+
+// whatsapp share
+$('wa').href='https://wa.me/?text='+encodeURIComponent('The ads in ShemeshPhone 2025 – take a look: '+location.href.split('#')[0]);
+</script>
+</body>
+</html>
